@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img//tab-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read easy - Text Summarizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="\static\style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="index.html"><img src="\static\img/logo.png" alt="logo"></a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <div id="ham-part1">
+                            <li><a href="#">Summarizer</a></li>
+                            <li><a href="#">Plagiarism Checker</a></li>
+                            <li><a href="#">Paraphrasing tool</a></li>
+                        </div>
+                        <div id="ham-part2">
+                            <li><a href="#">About Us</a></li>
+                        </div>
+                        <li class="logo2"><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        <img id="bg" src="\static\img/ham-background.png" alt="bg">
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </header>
+        <!-- <hr> -->
+        
+        <div id="page1">
+            <section class="main-content-box">
+                <div id="header">
+                    <div id="left-header">Summarizer</div>
+                    <div id="right-header">
+                        <label for="Summary-title" data-option="1">
+                            <img class="headerimg" src="https://www.summarizer.org/web_assets/frontend/img/summary.svg?v=1.1"
+                            alt="Summary" />
+                                Summary</label>
+                        <label for="bullet-style" style="opacity: 0.5;">
+                            <img class="headerimg" src="https://www.summarizer.org/web_assets/frontend/img/bullets-number.svg?v=1.1" alt="">
+                            Bullets</label>
+                        <label for="best-line" style="opacity: 0.5;">
+                            <img class="headerimg" src="https://www.summarizer.org/web_assets/frontend/img/tick-design.svg?v=1.1" alt="">
+                            Best line</label>
+                    </div>
+                </div>
+                <hr>
+                <div id="input_output">
+                  
+                        <div id="input_box" action=>
+
+                            <form action="/analyze" method="POST" id="my_form">
+                                    <textarea name="rawtext" id="textarea" cols="30" rows="10" placeholder="Start tying here or paste your text here ...."></textarea>
+
+                                <div id="input_setting_bar">
+                                    <input type="file" id="uploadBtn">
+                                    <label for="uploadBtn"><i class="ri-arrow-up-line"></i>Upload</label>
+
+                                    <button type="button" id="paste" ><i class="fa-regular fa-paste"></i></button>
+
+                                <!-- <a href="summarized.html"><button id="summarizerBtn" href="summarized.html" type="submit">summarize it</button></a>  -->
+                                <button id="summarizerBtn" type="submit">summarize it</button>
+                                </div>
+                            </form>
+                        </div>
+                   
+                    <!-- <div id="output_box"></div> -->
+                </div>
+            </section>
+        </div>
+
+
+        <div id="page2">
+            <div id="page2-heading">
+                <h2>Make your life easier with the free summarizer tool</h2>
+            </div>
+
+            <div id="feature-container">
+                <div class="box" id="container-one">
+                    <div id="img-container">  
+                        <img src="https://www.scribbr.com/wp-content/uploads/2023/03/icon-studium.webp" alt="">
+                    </div>
+                    <div id="text-container">
+                        <h4>Academic research</h4>
+                        <p>Speed up your academic research by extracting key points.</p>
+                    </div>
+                </div>
+                <div class="box" id="container-two">
+                    <div id="img-container">
+                        <img src="https://www.scribbr.com/wp-content/uploads/2023/03/icon-alltag.webp" alt="">
+                    </div>
+                    <div id="text-container">
+                        <h4>Every day use</h4>
+                        <p>Reduce your reading time by summarizing long blocks of text within seconds.</p>
+                    </div>
+                </div>
+                <div class="box" id="container-three">
+                    <div id="img-container">
+                        <img src="https://www.scribbr.com/wp-content/uploads/2023/03/icon-job.webp" alt="">
+                    </div>
+                    <div id="text-container">
+                        <h4>Business</h4>
+                        <p>Easily condense transcripts of long meetings into concise bullet points.</p>
+                    </div>
+                </div>
+                <div class="box" id="container-four">
+                    <div id="img-container">
+                        <img src="https://www.scribbr.com/wp-content/uploads/2023/03/icon-schule.webp" alt="">
+                    </div>
+                    <div id="text-container">
+                        <h4>Difficult text</h4>
+                        <p>Simplify hard-to-read paragraphs, sentences or complete articles with 1 click.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="page3">
+            <div id="text-container">
+                <div id="container-heading">
+                    <h2>Why use this summarizer?</h2>
+                </div>
+                <div id="bullet-points">
+                    <p><i class="ri-check-double-line"></i><strong> 100% free:</strong> Generate unlimited summaries without paying a penny</p>
+                    <p><i class="ri-check-double-line"></i><strong>Accurate:</strong>  Get a reliable and trustworthy summary of your original text without any errors</p>
+                    <p><i class="ri-check-double-line"></i><strong> No signup:</strong>  Use it without giving up any personal data</p>
+                    <p><i class="ri-check-double-line"></i><strong>Secure:</strong>  No summary data is stored, guaranteeing your privacy</p>
+                    <p><i class="ri-check-double-line"></i><strong>Speed:</strong>  Get an accurate summary within seconds, thanks to AI</p>
+                    <p><i class="ri-check-double-line"></i><strong>Flexible:</strong>  Adjust summary length to get more (or less) detailed summaries
+                    </p>
+                </div>
+            </div>
+
+            <div id="img-container">
+                <img src="https://www.scribbr.com/wp-content/uploads/2023/04/group-2953-1-1.png" alt="">
+            </div>
+        </div>
+
+        <div id="page4">
+            <div id="container">
+                <div id="page-heading">
+                    <h2>How to use this summarizer</h2>
+                </div>
+                <div id="content-container">
+                    <div class="box"><h2>1. Insert, paste or download your text</h2></div>
+                    <div class="box"><h2>2. Pick the way you want to summarize</h2></div>
+                    <div class="box"><h2>3. Adjust your summary length</h2></div>
+                    <div class="box"><h2>4. Get your summary in seconds!</h2></div>
+                    
+                    
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="containerfooter">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+    
+                        </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>online summarizer</h4>
+                        <ul>
+                            <li><a href="#">Paste</a></li>
+                            <li><a href="#">summarize</a></li>
+                            <li><a href="#">Copy</a></li>
+                            <li><a href="#">Use :)</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Our Team</h4>
+                        <div class="social-links">
+                            <img src="\static\img/aditya.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="\static\script.js"></script>
+</body>
+</html>
