@@ -18,4 +18,4 @@ def analyze():
     return render_template('summarized.html',summary=summary, original_txt=original_txt,len_orig_txt=len_orig_txt, len_summary=len_summary)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0,0,0,0')
